@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FKDLSWJS.GG</title>
+
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/result1.css')}}?after">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+
+</head>
+<body>
+<div id="Web_1920__10">
+	<div id="FKDLSWJSGG">
+		<span>FKDLSWJS.GG</span>
+	</div>
+	<div id="_25">
+		<svg class="Rectangle">
+			<rect id="Rectangle" rx="0" ry="0" x="0" y="0" width="670" height="226.07">
+			</rect>
+		</svg>
+		<img id="Emblem_Challenger" src="{{url_for('static', filename='img/ranked-emblems/Emblem_{}.png'.format(opponent['rank']['tier']))}}">
+			
+		<svg class="_11" viewBox="0 0 1 91">
+			<path id="_11" d="M 0 0 L 0 91">
+			</path>
+		</svg>
+		<div id="_">
+			<span>내 프로필</span>
+		</div>
+		<div id="__o">
+			<span>상대 프로필</span>
+		</div>
+		<svg class="Rectangle_p">
+			<rect id="Rectangle_p" rx="0" ry="0" x="0" y="0" width="670" height="226.07">
+			</rect>
+		</svg>
+		<svg class="_12" viewBox="0 0 1 91">
+			<path id="_12" d="M 0 0 L 0 91">
+			</path>
+		</svg>
+		<div id="Lv_137_">
+			<span>Lv. {{opponent['level']}} </span>
+		</div>
+		<div id="__">
+			<span>{{opponent['name']}}</span>
+		</div>
+		<div id="CHALLENGER_I">
+			<span>{{opponent['rank']['tier']}} {{opponent['rank']['rank']}}</span>
+		</div>
+		<div id="IRON_IV">
+			<span>{{result['rank']['tier']}} {{result['rank']['rank']}}</span>
+		</div>
+		<div id="ID23_LP">
+			<span>{{result['rank']['point']}} LP</span>
+		</div>
+		<div id="_67_230__120_">
+			<span>승률 {{opponent['rank']['win_rate']}}% ({{opponent['rank']['wins']}}승 / {{opponent['rank']['losses']}}패) </span>
+		</div>
+		<div id="ID1304_LP">
+			<span>{{opponent['rank']['point']}} LP</span>
+		</div>
+		<div id="Lv_266_">
+			<span>Lv. {{result['level']}} </span>
+		</div>
+		<div id="__1">
+			<span>{{result['name']}}</span>
+		</div>
+		<div id="_36_49__138_">
+			<span>승률 {{result['rank']['win_rate']}}% ({{result['rank']['wins']}}승 / {{result['rank']['losses']}}패) </span>
+		</div>
+		<img id="icon" src="http://ddragon.leagueoflegends.com/cdn/11.13.1/img/profileicon/{{opponent['profile_icon']}}.png">
+		<!-- srcset="icon.png 1x, icon@2x.png 2x" -->
+		<div id="VS">
+			<span>VS</span>
+		</div>
+		<img id="Emblem_Iron" src="{{url_for('static', filename='img/ranked-emblems/Emblem_{}.png'.format(result['rank']['tier']))}}">
+			
+		<img id="_7" src="http://ddragon.leagueoflegends.com/cdn/11.13.1/img/profileicon/{{result['profile_icon']}}.png">
+		<!-- srcset="_7.png 1x, _7@2x.png 2x" -->
+	</div>
+	<div id="_26">
+		<div id="__ba">
+			<span>매치업 평균값</span>
+		</div>
+		<svg class="_8">
+			<rect id="_8" rx="0" ry="0" x="0" y="0" width="2" height="4">
+			</rect>
+		</svg>
+		<div id="VS_ba">
+			<span>VS</span>
+		</div>
+		<div id="_bb">
+			<span>{{name1[1]}}(나)</span>
+		</div>
+		<div id="_bc">
+			<span>{{name2[1]}}(상대)</span>
+		</div>
+		<svg class="_9">
+			<rect id="_9" rx="131.5" ry="131.5" x="0" y="0" width="263" height="263">
+			</rect>
+		</svg>
+		<img id="_4" src="http://ddragon.leagueoflegends.com/cdn/11.13.1/img/champion/{{name1[0]}}.png">
+			
+		<svg class="_10">
+			<rect id="_10" rx="131.5" ry="131.5" x="0" y="0" width="264" height="263">
+			</rect>
+		</svg>
+		<img id="_3" src="http://ddragon.leagueoflegends.com/cdn/11.13.1/img/champion/{{name2[0]}}.png">
+			
+		<svg class="_13" viewBox="0 0 976.071 1">
+			<path id="_13" d="M 976.071044921875 0 L 0 0">
+			</path>
+		</svg>
+		<svg class="_15" viewBox="0 0 976.071 1">
+			<path id="_15" d="M 976.071044921875 0 L 0 0">
+			</path>
+		</svg>
+		<svg class="_16" viewBox="0 0 976.071 1">
+			<path id="_16" d="M 976.071044921875 0 L 0 0">
+			</path>
+		</svg>
+		<svg class="_14" viewBox="0 0 976.071 1">
+			<path id="_14" d="M 976.071044921875 0 L 0 0">
+			</path>
+		</svg>
+		<!-- <svg class="Rectangle_bl">
+			<rect id="Rectangle_bl" rx="0" ry="0" x="0" y="0" width="61" height="28">
+			</rect>
+		</svg> -->
+		<div id="_bm">
+			<span>상대승률</span>
+		</div>
+		<div id="KDA">
+			<span>KDA</span>
+		</div>
+		<div id="ID526">
+			<span>52.6%</span>
+		</div>
+		<div id="ID474">
+			<span>47.4%</span>
+		</div>
+		<div id="ID16">
+			<span>1.6</span>
+		</div>
+		<!-- <svg class="Rectangle_br">
+			<rect id="Rectangle_br" rx="0" ry="0" x="0" y="0" width="39" height="26">
+			</rect>
+		</svg> -->
+		<div id="ID21">
+			<span>2.1</span>
+		</div>
+		<div id="_bt">
+			<span>솔킬확률</span>
+		</div>
+		<div id="ID446">
+			<span>44.6%</span>
+		</div>
+		<!-- <svg class="Rectangle_bv">
+			<rect id="Rectangle_bv" rx="0" ry="0" x="0" y="0" width="59" height="24">
+			</rect>
+		</svg> -->
+		<div id="ID554">
+			<span>55.4%</span>
+		</div>
+		<div id="__bx">
+			<span>평균 피해량</span>
+		</div>
+		<div id="ID17235">
+			<span>17,235</span>
+		</div>
+		<!-- <svg class="Rectangle_bz">
+			<rect id="Rectangle_bz" rx="0" ry="0" x="0" y="0" width="96" height="30">
+			</rect>
+		</svg> -->
+		<div id="ID19928">
+			<span>19,928</span>
+		</div>
+	</div>
+	<div id="_23">
+		<div id="___b">
+			<span>적 룬/스펠 정보</span>
+		</div>
+		<svg class="_26_b">
+			<rect id="_26_b" rx="0" ry="0" x="0" y="0" width="740" height="445">
+			</rect>
+		</svg>
+		<div id="_17">
+			<img id="StatModsAdaptiveForceIcon" src="StatModsAdaptiveForceIcon.png" srcset="StatModsAdaptiveForceIcon.png 1x, StatModsAdaptiveForceIcon@2x.png 2x">
+				
+			<img id="StatModsAdaptiveForceIcon_b" src="StatModsAdaptiveForceIcon_b.png" srcset="StatModsAdaptiveForceIcon_b.png 1x, StatModsAdaptiveForceIcon_b@2x.png 2x">
+				
+			<img id="StatModsArmorIcon" src="StatModsArmorIcon.png" srcset="StatModsArmorIcon.png 1x, StatModsArmorIcon@2x.png 2x">
+				
+			<img id="StatModsAttackSpeedIcon" src="StatModsAttackSpeedIcon.png" srcset="StatModsAttackSpeedIcon.png 1x, StatModsAttackSpeedIcon@2x.png 2x">
+				
+			<img id="StatModsCDRScalingIcon" src="StatModsCDRScalingIcon.png" srcset="StatModsCDRScalingIcon.png 1x, StatModsCDRScalingIcon@2x.png 2x">
+				
+			<img id="StatModsArmorIcon_ca" src="StatModsArmorIcon_ca.png" srcset="StatModsArmorIcon_ca.png 1x, StatModsArmorIcon_ca@2x.png 2x">
+				
+			<img id="StatModsMagicResIcon" src="StatModsMagicResIcon.png" srcset="StatModsMagicResIcon.png 1x, StatModsMagicResIcon@2x.png 2x">
+				
+			<img id="StatModsMagicResIcon_cc" src="StatModsMagicResIcon_cc.png" srcset="StatModsMagicResIcon_cc.png 1x, StatModsMagicResIcon_cc@2x.png 2x">
+				
+			<img id="StatModsHealthScalingIcon" src="StatModsHealthScalingIcon.png" srcset="StatModsHealthScalingIcon.png 1x, StatModsHealthScalingIcon@2x.png 2x">
+				
+		</div>
+		<div id="_18">
+			<img id="Conqueror" src="Conqueror.png" srcset="Conqueror.png 1x, Conqueror@2x.png 2x">
+				
+			<img id="FleetFootwork" src="FleetFootwork.png" srcset="FleetFootwork.png 1x, FleetFootwork@2x.png 2x">
+				
+			<img id="LethalTempoTemp" src="LethalTempoTemp.png" srcset="LethalTempoTemp.png 1x, LethalTempoTemp@2x.png 2x">
+				
+			<img id="PressTheAttack" src="PressTheAttack.png" srcset="PressTheAttack.png 1x, PressTheAttack@2x.png 2x">
+				
+		</div>
+		<div id="_19">
+			<img id="LegendTenacity" src="LegendTenacity.png" srcset="LegendTenacity.png 1x, LegendTenacity@2x.png 2x">
+				
+			<img id="Triumph" src="Triumph.png" srcset="Triumph.png 1x, Triumph@2x.png 2x">
+				
+			<img id="CoupDeGrace" src="CoupDeGrace.png" srcset="CoupDeGrace.png 1x, CoupDeGrace@2x.png 2x">
+				
+			<img id="CutDown" src="CutDown.png" srcset="CutDown.png 1x, CutDown@2x.png 2x">
+				
+			<img id="LegendAlacrity" src="LegendAlacrity.png" srcset="LegendAlacrity.png 1x, LegendAlacrity@2x.png 2x">
+				
+			<img id="LegendBloodline" src="LegendBloodline.png" srcset="LegendBloodline.png 1x, LegendBloodline@2x.png 2x">
+				
+			<img id="PresenceOfMind" src="PresenceOfMind.png" srcset="PresenceOfMind.png 1x, PresenceOfMind@2x.png 2x">
+				
+			<img id="Overheal" src="Overheal.png" srcset="Overheal.png 1x, Overheal@2x.png 2x">
+				
+			<img id="LastStand" src="LastStand.png" srcset="LastStand.png 1x, LastStand@2x.png 2x">
+				
+		</div>
+		<img id="SecondWind" src="SecondWind.png" srcset="SecondWind.png 1x, SecondWind@2x.png 2x">
+			
+		<img id="Overgrowth" src="Overgrowth.png" srcset="Overgrowth.png 1x, Overgrowth@2x.png 2x">
+			
+		<img id="MirrorShell" src="MirrorShell.png" srcset="MirrorShell.png 1x, MirrorShell@2x.png 2x">
+			
+		<img id="FontOfLife" src="FontOfLife.png" srcset="FontOfLife.png 1x, FontOfLife@2x.png 2x">
+			
+		<img id="Demolish" src="Demolish.png" srcset="Demolish.png 1x, Demolish@2x.png 2x">
+			
+		<img id="Conditioning" src="Conditioning.png" srcset="Conditioning.png 1x, Conditioning@2x.png 2x">
+			
+		<img id="BonePlating" src="BonePlating.png" srcset="BonePlating.png 1x, BonePlating@2x.png 2x">
+			
+		<img id="Revitalize" src="Revitalize.png" srcset="Revitalize.png 1x, Revitalize@2x.png 2x">
+			
+		<img id="Unflinching" src="Unflinching.png" srcset="Unflinching.png 1x, Unflinching@2x.png 2x">
+			
+		<svg class="_19_c" viewBox="0 0 1 361.25">
+			<path id="_19_c" d="M 0 0 L 0 361.25">
+			</path>
+		</svg>
+		<svg class="_20" viewBox="0 0 1 361.25">
+			<path id="_20" d="M 0 0 L 0 361.25">
+			</path>
+		</svg>
+		<svg class="_3_c">
+			<ellipse id="_3_c" rx="25" ry="25" cx="25" cy="25">
+			</ellipse>
+		</svg>
+		<svg class="_4_c">
+			<ellipse id="_4_c" rx="25" ry="25" cx="25" cy="25">
+			</ellipse>
+		</svg>
+		<img id="ID7201_Precision" src="ID7201_Precision.png" srcset="ID7201_Precision.png 1x, ID7201_Precision@2x.png 2x">
+			
+		<img id="ID7204_Resolve" src="ID7204_Resolve.png" srcset="ID7204_Resolve.png 1x, ID7204_Resolve@2x.png 2x">
+			
+		<img id="_11_c" src="http://ddragon.leagueoflegends.com/cdn/11.13.1/img/spell/Summoner{{spell[0]}}.png">
+			
+		<img id="_12_c" src="http://ddragon.leagueoflegends.com/cdn/11.13.1/img/spell/Summoner{{spell[1]}}.png">
+			
+		<div id="_da">
+			<span>스펠</span>
+		</div>
+		<div id="__db">
+			<span>적응형 능력치</span>
+		</div>
+		<svg class="_34">
+			<rect id="_34" rx="0" ry="0" x="0" y="0" width="68" height="203">
+			</rect>
+		</svg>
+		<svg class="_35">
+			<rect id="_35" rx="0" ry="0" x="0" y="0" width="68" height="129">
+			</rect>
+		</svg>
+		<svg class="_29">
+			<rect id="_29" rx="0" ry="0" x="0" y="0" width="68" height="129">
+			</rect>
+		</svg>
+		<svg class="_36">
+			<rect id="_36" rx="0" ry="0" x="0" y="0" width="68" height="61">
+			</rect>
+		</svg>
+		<svg class="_37">
+			<rect id="_37" rx="0" ry="0" x="0" y="0" width="73.375" height="193">
+			</rect>
+		</svg>
+		<svg class="_30">
+			<rect id="_30" rx="0" ry="0" x="0" y="0" width="73.375" height="200.611">
+			</rect>
+		</svg>
+		<svg class="_27">
+			<rect id="_27" rx="0" ry="0" x="0" y="0" width="73.375" height="76">
+			</rect>
+		</svg>
+		<svg class="_31">
+			<rect id="_31" rx="0" ry="0" x="0" y="0" width="68" height="69">
+			</rect>
+		</svg>
+		<svg class="_32">
+			<rect id="_32" rx="0" ry="0" x="0" y="0" width="68" height="69">
+			</rect>
+		</svg>
+		<svg class="_33">
+			<rect id="_33" rx="0" ry="0" x="0" y="0" width="37" height="45.984">
+			</rect>
+		</svg>
+		<svg class="_28">
+			<rect id="_28" rx="0" ry="0" x="0" y="0" width="37" height="45.984">
+			</rect>
+		</svg>
+	</div>
+	<div id="_24">
+		<div id="__do">
+			<span>챔피언 파워커브</span>
+		</div>
+		<svg class="_23_dp">
+			<rect id="_23_dp" rx="0" ry="0" x="0" y="0" width="740" height="277">
+			</rect>
+		</svg>
+		<div class="line">
+			<canvas id="line-chart" width="730px" height="215px"></canvas>
+			<script>
+				var ltx = document.getElementById("line-chart").getContext("2d");
+				var lineChart = new Chart(ltx, {
+					type: 'line',
+					data: {
+					labels: ["10분", "20분", "30분", "40분", "50분"],
+					legend: {
+						display: false
+					},
+					
+					datasets: [
+						{
+						label: "1",
+						fill: true,
+						backgroundColor: "rgba(179,181,198,0.2)",
+						borderColor: 'rgb(75, 192, 192)',
+						pointBorderColor: "#fff",
+						pointBackgroundColor: "rgba(179,181,198,1)",
+						data: [55.77,45.61,42.69,50.62,34.82]
+						}
+					]
+					
+					},
+				});
+			</script>
+		</div>
+	</div>
+	<div id="_28_ds">
+		<div id="___dt">
+			<span>적 플레이 성향</span>
+		</div>
+		<svg class="_39">
+			<rect id="_39" rx="0" ry="0" x="0" y="0" width="740" height="445">
+			</rect>
+		</svg>
+		<div class="radar">
+			<canvas id="radar-chart" width="400px" height="400px"></canvas>	
+			<script>
+				var ctx = document.getElementById("radar-chart").getContext("2d"); 
+				var radarChart = new Chart(ctx, {
+					type: 'radar',
+					data: {
+					labels: ["CS수급", "적극성", "시야점수", "교전 기여도", "캐리력"],
+					legend: {
+						display: false
+					},
+					
+					datasets: [
+						{
+						label: "1",
+						fill: true,
+						backgroundColor: "rgba(179,181,198,0.2)",
+						borderColor: 'rgb(75, 192, 192)',
+						pointBorderColor: "#fff",
+						pointBackgroundColor: "rgba(179,181,198,1)",
+						data: {{radar}}
+						}
+					]
+					
+					},
+				});
+			</script>
+		</div>
+	</div>
+	<div id="_2021_FKDLSWJSGG_isnt_endorsed">
+		<span>© 2021 FKDLSWJS.GG isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.</span><br>
+	</div>
+	<div id="_21">
+		<div id="___d">
+			<span>적 모스트 아이템</span>
+		</div>
+		<svg class="_40">
+			<rect id="_40" rx="0" ry="0" x="0" y="0" width="240" height="267">
+			</rect>
+		</svg>
+		<svg class="_45">
+			<rect id="_45" rx="0" ry="0" x="0" y="0" width="240" height="267">
+			</rect>
+		</svg>
+		<svg class="_41">
+			<rect id="_41" rx="0" ry="0" x="0" y="0" width="240" height="267">
+			</rect>
+		</svg>
+		<svg class="_44">
+			<rect id="_44" rx="0" ry="0" x="0" y="0" width="240" height="267">
+			</rect>
+		</svg>
+		<svg class="_42">
+			<rect id="_42" rx="0" ry="0" x="0" y="0" width="240" height="267">
+			</rect>
+		</svg>
+		<svg class="_43">
+			<rect id="_43" rx="0" ry="0" x="0" y="0" width="240" height="267">
+			</rect>
+		</svg>
+		<img id="ID3153" src="https://ddragon.leagueoflegends.com/cdn/11.13.1/img/item/{{infos['items'][0][0]}}.png">
+			
+		<img id="ID3053" src="https://ddragon.leagueoflegends.com/cdn/11.13.1/img/item/{{infos['items'][1][0]}}.png">
+			
+		<img id="ID3075" src="https://ddragon.leagueoflegends.com/cdn/11.13.1/img/item/{{infos['items'][2][0]}}.png">
+			
+		<div id="___ea">
+			<span>{{infos['items'][0][1]}}</span>
+		</div>
+		<div id="_763">
+			<span>선택률 {{infos['items'][0][2]}}%</span>
+		</div>
+		<div id="_542">
+			<span>선택률 {{infos['items'][1][2]}}%</span>
+		</div>
+		<div id="_322">
+			<span>선택률 {{infos['items'][2][2]}}%</span>
+		</div>
+		<div id="__ee">
+			<span>{{infos['items'][1][1]}}</span>
+		</div>
+		<div id="__ef">
+			<span>{{infos['items'][2][1]}}</span>
+		</div>
+		<div id="ID1">
+			<span>#1</span>
+		</div>
+		<div id="ID4">
+			<span>#4</span>
+		</div>
+		<div id="ID2">
+			<span>#2</span>
+		</div>
+		<div id="ID5">
+			<span>#5</span>
+		</div>
+		<div id="ID3">
+			<span>#3</span>
+		</div>
+		<div id="_el">
+			<span>#6</span>
+		</div>
+		<div id="__em">
+			<span>{{infos['items'][3][1]}}</span>
+		</div>
+		<div id="_313">
+			<span>선택률 {{infos['items'][3][2]}}%</span>
+		</div>
+		<div id="_191">
+			<span>선택률 {{infos['items'][4][2]}}%</span>
+		</div>
+		<div id="_322_ep">
+			<span>선택률 {{infos['items'][5][2]}}%</span>
+		</div>
+		<div id="__eq">
+			<span>{{infos['items'][4][1]}}</span>
+		</div>
+		<div id="__er">
+			<span>{{infos['items'][5][1]}}</span>
+		</div>
+		<img id="ID3748" src="https://ddragon.leagueoflegends.com/cdn/11.13.1/img/item/{{infos['items'][3][0]}}.png">
+			
+		<img id="ID3143" src="https://ddragon.leagueoflegends.com/cdn/11.13.1/img/item/{{infos['items'][4][0]}}.png">
+			
+		<img id="ID3047" src="https://ddragon.leagueoflegends.com/cdn/11.13.1/img/item/{{infos['items'][5][0]}}.png">
+			
+	</div>
+	<div id="_27_ev">
+		<svg class="_47">
+			<rect id="_47" rx="0" ry="0" x="0" y="0" width="740" height="277">
+			</rect>
+		</svg>
+		<div id="___ex">
+			<span>상대 챔피언 정보</span>
+		</div>
+		<img id="_16_ey" src="http://ddragon.leagueoflegends.com/cdn/11.13.1/img/champion/{{name2[0]}}.png">
+			
+		<div id="_ez">
+			<span>{{name2[1]}}</span>
+		</div>
+		<div id="_Lv7__11320_Point">
+			<span>숙련도 Lv. {{infos['lv']}} <br/>{{infos['point']}} Point</span>
+		</div>
+		<div class="_7_e">
+			<canvas id="pieChartCanvas" width="136px" height="136px"></canvas>
+			<div class="win">승률</div>
+		</div>
+		<div class="_8_e">
+			<canvas id="pieChartCanvas2" width="136px" height="136px"></canvas>
+			<div class="kda">KDA</div>
+		</div>
+		<script>
+			window.onload = function () {
+				pieChartDraw();
+				setLegendOnClick();
+			}
+
+			let pieChartData = {
+				labels: ['승리', '패배'],
+				datasets: [{
+					data: {{wr}},
+					backgroundColor: ['rgb(54, 162, 235)', 'rgb(255, 99, 132)']
+				}] 
+			};
+
+			let pieChartData1 = {
+				labels: ['kill', 'death', 'assist'],
+				datasets: [{
+					data: {{kda}},
+					backgroundColor: ['rgb(54, 162, 235)', 'rgb(255, 99, 132)', 'rgb(75, 192, 192)']
+				}] 
+			};
+
+			let pieChartDraw = function () {
+				let ctx = document.getElementById('pieChartCanvas').getContext('2d');
+				let ctx1 = document.getElementById('pieChartCanvas2').getContext('2d');
+				
+				window.pieChart = new Chart(ctx, {
+					type: 'pie',
+					data: pieChartData,
+					options: {
+						responsive: false,
+						legend: {
+							display: false
+						},
+						legendCallback: customLegend
+					}
+				});
+
+				window.pieChart = new Chart(ctx1, {
+					type: 'pie',
+					data: pieChartData1,
+					options: {
+						responsive: false,
+						legend: {
+							display: false
+						},
+						legendCallback: customLegend
+					}
+				});
+			};
+
+
+			let customLegend = function (chart) {
+				let ul = document.createElement('ul');
+				let color = chart.data.datasets[0].backgroundColor;
+
+				// chart.data.labels.forEach(function (label, index) {
+				//     ul.innerHTML += `<li data-index="${index}"><span style="background-color: ${color[index]}"></span>${label}</li>`;
+				// });
+
+				ul.innerHTML += "<li data-target='성공'><span style='background-color: rgb(54, 162, 235)';></span>성공</ul>";
+				ul.innerHTML += "<li data-target='실패'><span style='background-color: rgb(255, 99, 132)';></span>실패</ul>";
+
+
+				return ul.outerHTML;
+			};
+
+			let setLegendOnClick = function () {
+				let liList = document.querySelectorAll('#legend-div ul li');
+
+				for (let element of liList) {
+					element.onclick = function () {
+						updateChart(event, this.dataset.target, "pieChart");
+						
+						if (this.style.textDecoration.indexOf("line-through") < 0) {
+							this.style.textDecoration = "line-through";
+						} else {
+							this.style.textDecoration = "";
+						}
+					}
+				}
+			};
+
+			let updateChart = function (e, target, chartId) {
+			let chart = e.view[chartId];
+			let i, ilen, meta;
+			
+			for (i = 0, ilen = (chart.data.datasets || []).length; i < ilen; ++i) {
+				meta = chart.getDatasetMeta(i);
+
+				//   if (meta.data[index]) {
+				//       meta.data[index].hidden = !meta.data[index].hidden;
+				//   }
+
+				for (var j = 0; j < meta.data.length; j++) {
+					if (meta.data[j]._view.label.includes(target)) {
+						meta.data[j].hidden = !meta.data[j].hidden;
+					}
+				}
+			}
+
+			chart.update();
+			};
+		</script>
+		<svg class="_21_e" viewBox="0 0 1 162.131">
+			<path id="_21_e" d="M 0 162.13134765625 L 0 0">
+			</path>
+		</svg>
+		<svg class="_22" viewBox="0 0 1 162.131">
+			<path id="_22" d="M 0 162.13134765625 L 0 0">
+			</path>
+		</svg>
+	</div>
+</div>
+<!-- <script type="text/javascript" src="{{url_for('static',filename='js/script.js')}}"></script> -->
+// <!-- <script type="text/javascript" src="{{url_for('static',filename='js/line.js')}}"></script> -->
+// <!-- <script type="text/javascript" src="{{url_for('static',filename='js/radar.js')}}"></script> -->
+</body>
+</html>
